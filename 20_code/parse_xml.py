@@ -32,8 +32,8 @@ file_path = os.path.join(script_dir, '00_src/smokers_surrogate_train_all_version
 df = parse_xml(file_path)
 print(df)
 
-# Correct the output file path by specifying a file name and extension
-output_file_path = os.path.join(script_dir, '01_intermediate-src/parsed_xml_5rows.csv')
+# Specify the output CSV file path
+output_csv_path = '/Users/robintitus/Desktop/nlp_final/NLP_Medical-SmokerCategorization/01_intermediate-src/df_parsed_5rows.csv'
 
 # Save the DataFrame to a CSV file
-df.to_csv(output_file_path, index=False)
+df.to_csv(output_csv_path, index=False)
